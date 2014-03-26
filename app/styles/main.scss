@@ -141,7 +141,7 @@ body {
 }
 
 .images a {
-    background-color: #ffc600;
+    background-color: #6637a7;
     display: block;
     position: relative;
     overflow: hidden;
@@ -196,6 +196,39 @@ body {
     border: 1px solid #fff;
 }
 
+#home {
+    background-image: url(../images/1.jpg);
+}
+
+#down-btn {
+    font-size: 50px;
+    color: #fff;
+    @include transition-property(color);
+    @include transition-duration(1s); 
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    height: 50px;
+}
+
+#down-btn:hover {
+    text-decoration: none;
+    @include transition-property(color);
+    @include transition-duration(1s); 
+    color: $color5;
+}
+
+.parallax {
+    width: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: 50% 0;
+}
+
+
 
 
 /* Tempalate */
@@ -209,8 +242,11 @@ body {
 
 /* Space out content a bit */
 body {
-    padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.relative {
+    position: relative;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
